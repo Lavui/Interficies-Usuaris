@@ -1,0 +1,8 @@
+
+table, th, td {
+   border: 1px solid black;
+   color: #000000;
+   background-color: lightblue;
+   font-family: verdana;
+   font-size: 10px;	
+}
