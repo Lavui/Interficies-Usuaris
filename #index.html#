@@ -5,17 +5,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Croat-Change</title>
-    <link rel="stylesheet" type="text/css" href="css/f.css" />   
+    <link rel="stylesheet" type="text/css"
+          href="css/f.css" />
+      
   </head>
 
 
   <body>
-    <a href="index.html"> <img src="imatges/fotoportada.jpg"> Portada </img> </a>
+    <div>
+        <a class="portada" href="index.html"> <img src="imatges/fotoportada.jpg"> Portada</a>
+    </div>
+    
     <header> <p>Heurisituqes</p>
-     <a href="index.html"> <img src="imatges/fotologo.jpg"></a>
       <a class="Login" href="singin.html"> Sign in</a>
       <a class="Login" href="register.html"> Registe </a>
     </header>
+
     <ul>
       <li><a href="index.html"> Inici </a></li>
       <li><a href="compra_venta.html"> Compra/Venta </a></li>
@@ -24,16 +29,12 @@
       <li><a href="mercat_croat.html"> Productes de segona ma </a></li>
 		  
     </ul>
-    <form action="singedin.html">
-        <br>
-        Nom d'Usuari:<br>
-        <input type="text" name="firstname">
-        <br>
-        Contrassenya:<br>
-        <input type="password" name="psw">
-        <br><br>
-        <input type="submit" value="Submit">
-    </form> 
+
+
+    <article>
+      <p>Som croat change, donans money</p>
+      <img src="fotos/fotoindex.jpg"> Introduccio
+    </article>
     
     <aside>
       <p>coses de aside</p>
@@ -47,9 +48,5 @@
       
     </footer>
 
-   
   </body>
-
-
-
 </html>
