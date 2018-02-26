@@ -1,4 +1,13 @@
 
+
+.portada{
+	height: 50px;
+	width: 1550px;
+	border: 1px solid blue;
+
+}
+
+
 table, th, td {
    border: 1px solid black;
    color: #000000;
