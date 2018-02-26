@@ -6,3 +6,7 @@ table, th, td {
    font-family: verdana;
    font-size: 10px;	
 }
+
+body{
+    background-color: #FFFFB3;
+}
