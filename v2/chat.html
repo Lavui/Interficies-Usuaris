@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>Croat-Change</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="css/roboto.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+</style>
+<body>
+
+<!-- header -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1" style="width: 10%" ><img src="imatges/fotologo.png" class="w3-round-xlarge" alt="Norway" style="width:24%"></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Croat-Change</a>
+    <a href="#" class="w3-bar-item w3-right w3-button"><i class="fa fa-search"></i></a>
+    <input class="w3-right" type="text" name="firstname" maxlength="10">
+    <a href="singin.html" class="w3-bar-item w3-right w3-hide-small w3-hover-white">Sing In</a>
+    <a href="register.html" class="w3-bar-item w3-right w3-hide-small w3-hover-white">Register</a>
+  </div>
+</div>
+
+
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l4 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a> 
+<a onclick="myFunction('Demo1')" class="w3-bar-item w3-button w3-hover-black">
+Compra/Venda</a>
+<div id="Demo1" class="w3-hide w3-border">
+  <ul class="w3-ul">
+    <li><a href="compra_venta.html" class="w3-bar-item w3-button">- Intercanvi Monedes</a></li>
+    <li><a href="mercat_croat.html" class="w3-bar-item w3-button">- Productes segona mà</a></li>
+  </ul>  
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+  <a class="w3-bar-item w3-button w3-hover-black" href="comercos.html">Comerços</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="noticies.html">Noticies</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+
+
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+<h2> Usuari </h2>
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Hola! M'interessa la teva oferta de enda de croats!</p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+  <p>Hey! Ets el 3r a la cua. T'aviso si els que tens davant es tiren enrera!</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Sweet! Pero que sapigues que si arriba el cas de que es tirin enrera significa que tindran alguna raó. Per tant si m'avises jo ja no estare interessat.</p>
+  <span class="time-right">11:02</span>
+</div>
+
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:100%;">
+  <p>Nah, pot ser que siguin tontos i no utilitzin la raó. Jo t'avisare igualment :)</p>
+  <span class="time-left">11:05</span>
+</div>
+ <input class="w3-left" type="text" name="chatt">
+<a href="#" class="w3-button">Enviar</a>
+</div>
+</div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l3 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
